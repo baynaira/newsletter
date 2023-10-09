@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sucess</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <div class="container">
+       <div class="sucess">
+        <img src="assets/images/icon-success.svg" alt="">
+        <h1> Thanks for <br>subscribing!</h1>
+        <p style="color:  hsl(235, 18%, 26%);">A confirmation email has been sent to<br> <b><span id="user-email"></span></b>
+            Please open it and click the button inside to confirm your subscription.
+          </p>
+            <div class="dismiss">
+           <a href="index.html"><button class="btn">Dismiss message</button></a>
+            </div>
+      </div>
+   </div>
+     <script>
+        // JavaScript to extract and display the email from the URL
+        document.addEventListener("DOMContentLoaded", function () {
+          const userEmail = new URLSearchParams(window.location.search).get("email");
+          document.getElementById("user-email").textContent = userEmail;
+        });
+      </script> 
+    
+</body>
+
+</html>
