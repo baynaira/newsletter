@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const emailValue = emailInput.value.trim();
 
         if (!isValidEmail(emailValue)) {
-            emailError.textContent = "Valid email required";
+            emailError.textContent = "InValid email required";
             emailInput.classList.add("invalid"); 
            
 
